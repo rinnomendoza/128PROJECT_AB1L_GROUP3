@@ -27,7 +27,7 @@ function move2(id, min, max)
 	truMin = min;
 	truMax = max;
 	pointer = min;
-	next();
+	next2();
 }
 
 function next2(){

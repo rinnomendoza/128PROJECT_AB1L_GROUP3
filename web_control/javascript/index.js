@@ -3,15 +3,15 @@ var first=1;
 var last=4;
 function place(x,y)
 {
-	var i1 = document.getElementById("i1");
-	var i2 = document.getElementById("i2");
-	var i3 = document.getElementById("i3");
-	var i4 = document.getElementById("i4");
-	var i5 = document.getElementById("i5");
-	var i6 = document.getElementById("i6");
-	var i7 = document.getElementById("i7");
-	var i8 = document.getElementById("i8");
-	var i9 = document.getElementById("i9");
+	var i1 = document.getElementById("a1");
+	var i2 = document.getElementById("a2");
+	var i3 = document.getElementById("a3");
+	var i4 = document.getElementById("a4");
+	var i5 = document.getElementById("a5");
+	var i6 = document.getElementById("a6");
+	var i7 = document.getElementById("a7");
+	var i8 = document.getElementById("a8");
+	var i9 = document.getElementById("a9");
 
 	i1.style.left = 0 + "px";
 	i2.style.left = 170 + "px";
@@ -41,14 +41,14 @@ function moveLeft()
 
 function moveRight()
 {
-	k = document.getElementById("i1").style.left;
+	k = document.getElementById("a1").style.left;
 	for(j=1; j<9; j++)
 	{
-		i1 = document.getElementById("i"+(j+1));
-		i2 = document.getElementById("i"+j);
+		i1 = document.getElementById("a"+(j+1));
+		i2 = document.getElementById("a"+j);
 		i2.style.left = i1.style.left;
 	}
-	i1 = document.getElementById("i9");
+	i1 = document.getElementById("a9");
 	i1.style.left = k;
 }
 

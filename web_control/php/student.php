@@ -40,15 +40,15 @@
 		?>
 		
 		<section class = "Bottom">
-				<a href = 'DormInfo.php?dormname=<?php echo $mens?>' method='post'><img src = "../../images/dorms/mens-dorm.jpg" class = "img" id = "i1" alt = "men's dorm"/></a>
-				<a href = 'DormInfo.php?dormname=<?php echo $womens?>' method='post'><img src = "../../images/dorms/womens-dorm.jpg" class = "img" id = "i2" /></a>
-				<a href = 'DormInfo.php?dormname=<?php echo $ih?>' method='post'><img src = "../../images/dorms/ih.jpg" class = "img" id = "i3" /></a>
-				<a href = 'DormInfo.php?dormname=<?php echo $acci?>' method='post'><img src = "../../images/dorms/acci-upper.jpg" class = "img" id = "i4" /></a>
-				<a href = 'DormInfo.php?dormname=<?php echo $foreha?>' method='post'><img src = "../../images/dorms/foreha.jpg" class = "img" id = "i5" /></a>
-				<a href = 'DormInfo.php?dormname=<?php echo $mareha?>' method='post'><img src = "../../images/dorms/mareha.jpg" class = "img" id = "i6" /></a>
-				<a href = 'DormInfo.php?dormname=<?php echo $new?>' method='post'><img src = "../../images/dorms/new-dorm-2.jpg" class = "img" id = "i7" /></a>
-				<a href = 'DormInfo.php?dormname=<?php echo $newforeha?>' method='post'><img src = "../../images/dorms/new-foreha-sign.jpg" class = "img" id = "i8" /></a>
-				<a href = 'DormInfo.php?dormname=<?php echo $vetmed?>' method='post'><img src = "../../images/dorms/vetmed-dorm-sign.jpg" class = "img" id = "i9" /></a>
+				<a href = 'DormInfo.php?dormname=<?php echo $mens?>' method='post'><img src = "../../images/dorms/mens-dorm.jpg" class = "img" id = "a1" alt = "men's dorm"/></a>
+				<a href = 'DormInfo.php?dormname=<?php echo $womens?>' method='post'><img src = "../../images/dorms/womens-dorm.jpg" class = "img" id = "a2" /></a>
+				<a href = 'DormInfo.php?dormname=<?php echo $ih?>' method='post'><img src = "../../images/dorms/ih.jpg" class = "img" id = "a3" /></a>
+				<a href = 'DormInfo.php?dormname=<?php echo $acci?>' method='post'><img src = "../../images/dorms/acci-upper.jpg" class = "img" id = "a4" /></a>
+				<a href = 'DormInfo.php?dormname=<?php echo $foreha?>' method='post'><img src = "../../images/dorms/foreha.jpg" class = "img" id = "a5" /></a>
+				<a href = 'DormInfo.php?dormname=<?php echo $mareha?>' method='post'><img src = "../../images/dorms/mareha.jpg" class = "img" id = "a6" /></a>
+				<a href = 'DormInfo.php?dormname=<?php echo $new?>' method='post'><img src = "../../images/dorms/new-dorm-2.jpg" class = "img" id = "a7" /></a>
+				<a href = 'DormInfo.php?dormname=<?php echo $newforeha?>' method='post'><img src = "../../images/dorms/new-foreha-sign.jpg" class = "img" id = "a8" /></a>
+				<a href = 'DormInfo.php?dormname=<?php echo $vetmed?>' method='post'><img src = "../../images/dorms/vetmed-dorm-sign.jpg" class = "img" id = "a9" /></a>
 				<img src = "../../images/web_img/left.png" id = "b1" class = "Button" onclick = "moveLeft()" />
 				<img src = "../../images/web_img/right.png" class = "Button" id = "b2" onclick = "moveRight()" />
 		</section>

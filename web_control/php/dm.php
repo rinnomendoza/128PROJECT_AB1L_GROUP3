@@ -78,7 +78,7 @@
 		
 		<section class = "announce4" id = "ann">
 			<h2>Narinig Ko Sa DORM(overDORM)</h2>
-			<section class = "holder">
+			<section class = "holder3">
 				<section class = "frame">
 					<?php
 						include 'connect.php';
@@ -98,7 +98,7 @@
 		
 		<section class = "announce5" id = "prof">
 			<h2>Profile</h2>
-			<section class = "holder2">
+			<section class = "holder4">
 			<?php
 				include("connect.php");
 				$username = $_SESSION['uname'];

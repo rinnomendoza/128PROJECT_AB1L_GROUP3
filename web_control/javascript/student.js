@@ -12,7 +12,7 @@ function slideAnnounce()
 {
 	moveAside();
 	var ann = document.getElementById('ann');
-	ann.style.left = 400 + "px";
+	ann.style.left = 250 + "px";
 }
 
 function moveAside2()
@@ -48,14 +48,14 @@ function slideNew()
 {
     moveAside2();
     var prof = document.getElementById('up2');
-	prof.style.left = 320 + "px";
+	prof.style.left = 350 + "px";
 }
 
 function view()
 {
 	moveAside();
 	var prof = document.getElementById('prof');
-	prof.style.left = 280 + "px";
+	prof.style.left = 210 + "px";
 }
 
 function moveAside()

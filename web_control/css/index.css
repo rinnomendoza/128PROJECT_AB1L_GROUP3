@@ -3,8 +3,8 @@ index's navigation styling
 -----------------------------------------------------*/
 .IndexNav
 {
-	left: 500px;
-	width: 384px;
+	left: 483px;
+	width: 404px;
 }
 
 .Bottom
@@ -280,8 +280,9 @@ h3{
 	font-style: bold;
 	color: orange;
 	text-align:;
+    margin-left: 10px;
 	margin-bottom: 0px; 
-	margin-top: 20px; 
+	margin-top: 10px; 
 	letter-spacing: 1px;
 	line-height: 14px; 
 }
@@ -290,7 +291,7 @@ h3{
 
 	position: absolute;
 	left: 170px; 
-	top: 190px;
+	top: 200px;
 	width: 505px;
 	bottom: 80px;
 	color: #000;
@@ -328,4 +329,74 @@ h3{
     top: 190px;
     left: -1130px;
     -webkit-transition: all .5s;
+}
+
+.ImgSlider
+{
+	position: relative;
+	top: 50px;
+	left: 320px;
+	width: 600px;
+	height: 400px;
+	background-color: black;
+	float: left;
+	border-style: solid;
+	border-color: #000000;
+	border-width: 10px 10px 50px 10px;
+	overflow: hidden;
+}
+
+.IMG
+{
+	width: 600px;
+	height: 400px;
+	position: absolute;
+	-webkit-transition: all 1s;
+}
+
+.IMG2
+{
+	width: 600px;
+	height: 400px;
+	position: absolute;
+	top: 0px;
+	left: 600px;
+	-webkit-transition: all 1s;
+}
+
+.buttons
+{
+	position: absolute;
+	top: 450px;
+	left: 850px;
+	width: 120px;
+	height: 70px;
+	float: left;
+	font-weight: bold;
+}
+
+.sets
+{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	border-style: solid;
+	border-color: #000000;
+	border-width: 3px;
+	background-color: white;	
+	font-size: 30px;
+	-webkit-transition: all 1s;
+}
+
+.sets2
+{
+	position: absolute;
+	top: 0px;
+	right: 600px;
+	border-style: solid;
+	border-color: #000000;
+	border-width: 3px;
+	background-color: white;	
+	font-size: 30px;
+	-webkit-transition: all 1s;
 }

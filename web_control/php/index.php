@@ -15,6 +15,7 @@
 		<link rel = "stylesheet" type = "text/css" href = "../css/general.css" />
 		<link rel = "stylesheet" type = "text/css" href = "../css/index.css" />
 		<script type="text/javascript" src = "../javascript/index.js"></script>
+        <script type="text/javascript" src = "../javascript/slider.js"></script>
 	</head>
 	<?php 
 		if(isset($_SESSION['log']))
@@ -43,15 +44,15 @@
 		$vetmed="Vetmed";
 	?>
 		<section class = "Bottom">
-				<a href = 'DormInfo.php?dormname=<?php echo $mens?>' method='post'><img src = "../../images/dorms/mens-dorm.jpg" class = "img" id = "i1" alt = "men's dorm"/></a>
-				<a href = 'DormInfo.php?dormname=<?php echo $womens?>' method='post'><img src = "../../images/dorms/womens-dorm.jpg" class = "img" id = "i2" /></a>
-				<a href = 'DormInfo.php?dormname=<?php echo $ih?>' method='post'><img src = "../../images/dorms/ih.jpg" class = "img" id = "i3" /></a>
-				<a href = 'DormInfo.php?dormname=<?php echo $acci?>' method='post'><img src = "../../images/dorms/acci-upper.jpg" class = "img" id = "i4" /></a>
-				<a href = 'DormInfo.php?dormname=<?php echo $foreha?>' method='post'><img src = "../../images/dorms/foreha.jpg" class = "img" id = "i5" /></a>
-				<a href = 'DormInfo.php?dormname=<?php echo $mareha?>' method='post'><img src = "../../images/dorms/mareha.jpg" class = "img" id = "i6" /></a>
-				<a href = 'DormInfo.php?dormname=<?php echo $new?>' method='post'><img src = "../../images/dorms/new-dorm-2.jpg" class = "img" id = "i7" /></a>
-				<a href = 'DormInfo.php?dormname=<?php echo $newforeha?>' method='post'><img src = "../../images/dorms/new-foreha-sign.jpg" class = "img" id = "i8" /></a>
-				<a href = 'DormInfo.php?dormname=<?php echo $vetmed?>' method='post'><img src = "../../images/dorms/vetmed-dorm-sign.jpg" class = "img" id = "i9" /></a>
+				<a href = 'DormInfo.php?dormname=<?php echo $mens?>' method='post'><img src = "../../images/dorms/mens-dorm.jpg" class = "img" id = "a1" alt = "men's dorm"/></a>
+				<a href = 'DormInfo.php?dormname=<?php echo $womens?>' method='post'><img src = "../../images/dorms/womens-dorm.jpg" class = "img" id = "a2" /></a>
+				<a href = 'DormInfo.php?dormname=<?php echo $ih?>' method='post'><img src = "../../images/dorms/ih.jpg" class = "img" id = "a3" /></a>
+				<a href = 'DormInfo.php?dormname=<?php echo $acci?>' method='post'><img src = "../../images/dorms/acci-upper.jpg" class = "img" id = "a4" /></a>
+				<a href = 'DormInfo.php?dormname=<?php echo $foreha?>' method='post'><img src = "../../images/dorms/foreha.jpg" class = "img" id = "a5" /></a>
+				<a href = 'DormInfo.php?dormname=<?php echo $mareha?>' method='post'><img src = "../../images/dorms/mareha.jpg" class = "img" id = "a6" /></a>
+				<a href = 'DormInfo.php?dormname=<?php echo $new?>' method='post'><img src = "../../images/dorms/new-dorm-2.jpg" class = "img" id = "a7" /></a>
+				<a href = 'DormInfo.php?dormname=<?php echo $newforeha?>' method='post'><img src = "../../images/dorms/new-foreha-sign.jpg" class = "img" id = "a8" /></a>
+				<a href = 'DormInfo.php?dormname=<?php echo $vetmed?>' method='post'><img src = "../../images/dorms/vetmed-dorm-sign.jpg" class = "img" id = "a9" /></a>
 				<img src = "../../images/web_img/left.png" id = "b1" class = "Button" onclick = "moveLeft()" />
 				<img src = "../../images/web_img/right.png" class = "Button" id = "b2" onclick = "moveRight()" />
 		</section>
@@ -101,13 +102,7 @@
 		<section class = "navigation IndexNav">
 			<ul id="menu">
 				<li><a href="#" onclick = "cl()">Home</a></li>
-				<li><a href="#">Posts</a>
-					<ul>
-						<li><a href="#">Announcements</a></li>
-						<li><a href="#" onclick = "map()">Map</a></li>
-						<li><a href="#">Gallery</a></li>
-					</ul>
-				</li>
+				<li><a href="#" onclick = "map()">Gallery</a></li>
 				<li><a href="#">Access</a>
 					<ul>
 						<li><a href="#" onclick = "signIn()">Sign In</a></li>
@@ -129,21 +124,42 @@
 		</section>
 		
 		<section class = "full" id = "MAP">
-			<section class = "slider">
+			<section class = "ImgSlider">
+				<img src = "dorms/i1.jpg" id = "i1" class = "IMG"/>
+				<?php
+				for($i=2;$i<67;$i+=1)echo "<img src = \"dorms/i".$i.".jpg\" id = \"i".$i."\"class = \"IMG2\"/>";
+				?>
+				
+				<section class = "sets" id = "s0">acci-lower</section>
+				<section class = "sets2" id = "s1">acci-upper</section>
+				<section class = "sets2" id = "s2">ati</section>
+				<section class = "sets2" id = "s3">foreha</section>
+				<section class = "sets2" id = "s4">international house</section>
+				<section class = "sets2" id = "s5">mareha</section>
+				<section class = "sets2" id = "s6">men's dorm</section>
+				<section class = "sets2" id = "s7">new dorm</section>
+				<section class = "sets2" id = "s8">new foreha</section>
+				<section class = "sets2" id = "s9">vetmed</section>
+				<section class = "sets2" id = "s10">women's dorm</section>
 			</section>
 			<section class = "list">
 				<ul id = "mapList">
-					<li><a href = "#">acci</a></li>
-					<li><a href = "#">ati</a></li>
-					<li><a href = "#">foreha</a></li>
-					<li><a href = "#">international house</a></li>
-					<li><a href = "#">mareha</a></li>
-					<li><a href = "#">men's dorm</a></li>
-					<li><a href = "#">new dorm</a></li>
-					<li><a href = "#">new foreha</a></li>
-					<li><a href = "#">vetmed</a></li>
-					<li><a href = "#">women's dorm</a></li>
+					<li><a href = "#" onclick = "move2(0, 1, 6)">acci-lower</a></li>
+					<li><a href = "#" onclick = "move2(1, 7, 14)">acci-upper</a></li>
+					<li><a href = "#" onclick = "move2(2, 15, 20)">ati</a></li>
+					<li><a href = "#" onclick = "move2(3, 21, 23)">foreha</a></li>
+					<li><a href = "#" onclick = "move2(4, 24, 28)">international house</a></li>
+					<li><a href = "#" onclick = "move2(5, 29, 33)">mareha</a></li>
+					<li><a href = "#" onclick = "move2(6, 34, 38)">men's dorm</a></li>
+					<li><a href = "#" onclick = "move2(7, 39, 46)">new dorm</a></li>
+					<li><a href = "#" onclick = "move2(8, 47, 53)">new foreha</a></li>
+					<li><a href = "#" onclick = "move2(9, 54, 60)">vetmed</a></li>
+					<li><a href = "#" onclick = "move2(10, 61, 66)">women's dorm</a></li>
 				</ul>
+			</section>
+			<section class = "buttons">
+                    <input type = "button" value = "PREVIOUS" onclick = "prev2()"/>
+                    <input type = "button" value = "    NEXT     " onclick = "next2()"/>
 			</section>
 			<img src = "../../images/web_img/closeButton.png" class = "close" onclick = "cl()"/>
 		</section>
